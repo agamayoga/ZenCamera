@@ -1,0 +1,20 @@
+﻿    <Window x:Class="Agama.AboutWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Agama"
+    mc:Ignorable="d"
+    Title="About" Icon="/Resources/icon.ico"
+    Width="260" Height="200" ResizeMode="NoResize"
+    PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid Background="#F0F0F0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <StackPanel Margin="5" Orientation="Vertical" HorizontalAlignment="Center">
+            <Image Source="/Resources/logo.png" Width="64" Height="69" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Text="Agama Yoga Ltd" Margin="0,5,0,0" HorizontalAlignment="Center" />
+            <TextBlock Text="Zen Camera" x:Name="tbTitle" Margin="0,2,0,0" HorizontalAlignment="Center" />
+            <TextBlock Text="Release date" x:Name="tbReleaseDate" Margin="0,2,0,0" HorizontalAlignment="Center" />
+            <Button Content="OK" IsDefault="True" Padding="12,1" Margin="0,10,0,0" HorizontalAlignment="Center" Click="OK_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
